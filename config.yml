@@ -1,0 +1,16 @@
+title: Dvnn
+description: Ghdgnnhgf
+template:
+  repo: dvnn-template
+  name: dvnn
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
